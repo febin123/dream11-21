@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.back-img img{
+  margin-top: 0vw;
+}
+.leaderboard-banner img{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .leaderboard-banner img{
+    display: block;
+    width: 100vw;
+  }
+
+}
+.play-contest h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 2vw;
+    
+}
+
+.prize h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+@media screen and (max-width: 600px) {
+
+  .play-contest h1{
+    font-size: 14px;
+    padding-bottom: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+/*start of table*/
+table {
+   
+    border-collapse: collapse;
+    
+    width: 80%;
+    table-layout: fixed;
+    margin-left: 10vw;
+font-family: 'Roboto', sans-serif;
+    
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+   
+    padding: .35em;
+  
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  table th{
+  background-color: #fbad18;
+    color: black;
+    margin-right: 10vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+  
+  }
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+      font-family: 'Roboto', sans-serif;
+    
+   
+    
+  }
+  tr td img{
+      width: 2vw;
+      padding: 0;
+  }
+  tr.dash td{
+    border-bottom: 2px dashed grey;
+    height: 10vh;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  table th {
+      font-family: 'Roboto', sans-serif;
+    
+   
+    text-transform: uppercase;
+   
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+        font-family: 'Roboto', sans-serif;
+      font-size: 1.3em;
+    }
+    
+    table thead {
+        font-family: 'Roboto', sans-serif;
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+        font-family: 'Roboto', sans-serif;
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+        font-family: 'Roboto', sans-serif;
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .dash img{
+      width: 8vw;
+    }
+  }
+  
+  /*start of points*/
+  #point{
+      padding-top: 2vw;
+      background-color: whitesmoke;
+      text-align:center;
+  }
+  .point-heading h1{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;    
+    padding-top: 0vw;
+
+  }
+  .point-para p{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    margin-top:1vw;
+    font-size: 16px;    
+      padding-bottom:1vw;
+    
+  }
+  /*end of points*/
+  
+  /*start of t&c*/
+.tc-heading h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;    
+    padding-top: 2vw;
+}
+.tc-data ol{
+    text-align:justify;
+    font-family: 'Roboto', sans-serif;
+   
+    font-size: 16px;    
+    padding-top: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vw;
+}
+
+  /*end of t&c*/
+  .data2{
+    margin-left: 60vw;
+    margin-top: -13vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  .data3{
+    margin-left: 80vw;
+    margin-top: -16vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  @media screen and (max-width: 620px) {
+
+    .data2{
+      margin-top: -12vw;
+      margin-left: 10vw;
+    }
+    .data2 li{
+      line-height: 5vw;
+    }
+    .data1 li{
+      line-height: 5vw;
+    }
+    .data3 li{
+      line-height: 5vw;
+    }
+    .data3{
+      margin-top: -12vw;
+      margin-left: 10vw;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
